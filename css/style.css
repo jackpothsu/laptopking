@@ -98,9 +98,10 @@ body{
 }
 
 .allcart > img{
-  width: 600px;
+  width: 900px;
+  height: 400px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 
 }
 
@@ -112,7 +113,7 @@ body{
 }
 .headcart {
   color: white;
-  width: 100%;
+  width: 1000px;
   margin: 0 auto;
 }
 
