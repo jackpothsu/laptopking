@@ -275,7 +275,8 @@ body{
 
   .content h2{
     text-align: center;
-    color: white;
+    color: orange;
+    text-shadow: 1px 1px black;
     display: block;
     font-weight: bold;
     font-size: 28px;
@@ -298,6 +299,7 @@ body{
     margin-top: 30px;
     margin: 0 auto;    
     display: flex;
+    
 }
 
 .mainitem  a{
@@ -307,12 +309,22 @@ body{
     text-decoration: none;
     display: block;
     height: 500px;
-    color: white;
+    color: black;
+    font-weight: bold;
     text-align: center;
     font-size: 30px;
     padding-top: 30px;
-    box-sizing: border-box;
-    text-shadow: 1px 1px  rgba(0,0,0,1);        
+    background-color: orange;     
+  
+}
+
+.mainitem p{
+  background-color: purple;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px 10px;
+  
 }
 
 .itema a{
@@ -336,9 +348,9 @@ body{
 .mainitem li{
   flex-grow: 1;
 }
-.mainitem a:hover{
-color: red;
-}
+/* .mainitem a:hover{
+color: royalblue;
+} */
 
 /* -------電競筆電------ */
 .tp1-ul{
@@ -723,7 +735,9 @@ color: red;
   .swiper-slide a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: skyblue;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
     padding-top: 50px;
     margin: 0 auto;
     width: 200px;    
