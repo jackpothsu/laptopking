@@ -55,10 +55,43 @@ body{
     margin-top: 20px;    
   }  
 
-  
+  .top  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;        
+  }  
 
   .top1 > li:hover > a {
     text-shadow: 2px 2px 2px #BDE0CE;  
+  }
+
+  .item {
+    display: none;   
+    width: 200px;
+    position: absolute;    
+  }
+
+
+
+  .item li a{
+    color: white;
+    background-color: black;
+  }
+
+  ul li:hover .item {
+    display: block;
+  }
+
+  .item a:hover {
+    background-color: white;
+    color:black;   
+    text-shadow: none;
   }
 
   /* ---------導覽列右側icon----------- */
@@ -165,7 +198,7 @@ body{
   background-color: orange;
   float: right;
   cursor: pointer;
-  margin-right: 10%;
+  margin-right: 7%;
   font-size: 18px;
   line-height: 40px;
     height: 40px;
@@ -225,38 +258,9 @@ body{
     text-align: center;
 }
 
-  /* 子選單 */
+  /* 導覽列下主內容 */
 
-  .item {
-    display: none;   
-    width: 200px;
-    position: absolute;    
-  }
-
-  .top  a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    /* background-color: #fefefe; */
-    width: 200px;
-    height: 70px;
-    line-height: 70px;
-    text-align: center;        
-  }
-
-  .item li a{
-    color: white;
-    background-color: black;
-  }
-
-  ul li:hover .item {
-    display: block;
-  }
-
-  .item a:hover {
-    background-color: white;
-    color:black;   
-  }
+  
 .content{
     margin: 0 auto 200px auto;    
 }
@@ -416,7 +420,7 @@ color: red;
   flex-wrap: wrap;
 }
 .laptop-item h2{
-  font-size: 36px;
+  font-size: 42px;
   color: skyblue;
 }
 
@@ -537,7 +541,7 @@ color: red;
 
 .allab h1{
   color: skyblue;
-  font-size: 60px;
+  font-size: 42px;
   text-align: center;
   margin-bottom: 30px;
   text-shadow: 3px 3px 2px black;
@@ -642,6 +646,10 @@ color: red;
   color: white;
 }
 
+::placeholder{
+  text-shadow: 1px 1px black;
+}
+
 
 .contact-item textarea{
   margin-top: 10px;
@@ -695,10 +703,13 @@ color: red;
 
 
   .swiper {
-    width: 100%;
+    width: 1100px;
     height: 300px;   
   }
 
+  .mySwiper0 img{
+    height: 400px;
+  }
   
   
   .swiper-slide {
@@ -722,6 +733,70 @@ color: red;
     width:200px;
     padding-top: 30px;
     }
+
+    .mySwiper2 swiper-slide{
+      width: 400px;
+    }
+
+    .mySwiper2 img{
+      width: 400px;
+    }
+
+    .cst-1 {
+      background-image: url(../images/qa.jpg);
+      width: 350px;
+      height: 350px;
+      background-size: cover;
+      display: block;
+    }
+
+    .cst-1 h3{
+      float: right;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 10px 0 0 10px;
+      background-color: orange;
+    }
+
+    .cst-2 {
+      background-image: url(../images/fix.jpg);
+      width: 350px;
+      height: 350px;
+      background-size: cover;
+      display: block;
+    }
+
+    .cst-2 h3{
+      float: left;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 10px 0 0 10px;
+      background-color: orange;
+    }
+
+    .cst-3{
+      background-image: url(../images/team.jpg);
+      width: 350px;
+      height: 350px;
+      background-size: cover;
+      display: block;
+    }
+
+    .cst-3 h3{
+      display: flex;
+      width: fit-content;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 10px auto;
+      background-color: orange;
+      text-align: center;
+    }
+
+    
+
+
+
+
 
 
 
