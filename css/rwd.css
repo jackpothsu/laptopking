@@ -1,0 +1,111 @@
+@media screen and (max-width: 414px) {
+    
+   
+    .all{
+        width: 100%;
+        
+    }
+
+    
+        
+	.top{
+		height: 80px;
+		padding: 10px 0 10px 10px;
+		
+		border-bottom: 1px solid white;
+		background-color: black;
+
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		box-sizing: border-box;
+        
+	}
+
+    .top1 li{
+        display: none;
+    }
+
+    .top .top1 .fa-bars{
+        display: block;
+       
+        font-size: 28px;
+
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        
+        
+    }
+
+    .top1 img{
+        padding: 0;
+        width: 50px;
+        height: 60px;
+       
+        
+    }
+    
+
+    .top1 > li {
+        width: 50px;
+    }
+
+    .top a {
+        width: 20px;
+        font-size: 16px;
+    }
+
+    .content img{
+        width: 100%;
+    }
+
+    .mainitem{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mainitem li {
+        border: 1px solid white;
+    }
+
+    .mainitem a {
+        
+        height: 300px;
+    } 
+
+    article h2::after{
+        left: 46.5%;
+    }
+
+    .swiper{
+        margin-top: 30px;
+    }
+
+   
+    .swiper a{
+       
+        margin: 0 auto;
+    }
+    .swiper img{
+        width: 200px;
+        margin: 0 auto;
+        
+    }
+
+    .swiper-slide{
+        padding-bottom: 120px;
+    }
+
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+
+}
