@@ -6,15 +6,17 @@
         
     }
 
+   body{
+    background-size: cover;
+   }
+
     
         
 	.top{
 		height: 80px;
-		padding: 10px 0 10px 10px;
-		
+		padding: 10px 0 10px 10px;		
 		border-bottom: 1px solid white;
 		background-color: black;
-
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -25,7 +27,17 @@
 
     .top1 li{
         display: none;
+        flex-direction: column;
+		position: absolute;
+		right: 0;
+		top: 61px;
+		background-color: #fff;
+		width: 100%;
     }
+
+    .top1 :hover
+
+
 
     .top .top1 .fa-bars{
         display: block;
@@ -43,6 +55,7 @@
         padding: 0;
         width: 50px;
         height: 60px;
+        float: left;
        
         
     }
@@ -79,11 +92,30 @@
         left: 46.5%;
     }
 
-    .swiper{
-        margin-top: 30px;
+    /* 最下方導覽列 */
+
+    .info li a{
+        display: block;
     }
 
-   
+    .info li {
+        /* writing-mode: vertical-rl; */
+        /* padding: 0 30px; */
+        word-break: break-all;
+        width: 100px;
+    }
+
+    .mySwiper0 img{
+        height: 200px;
+    }
+
+    /* 首頁下面swiper */
+
+    .swiper{
+        margin-top: 30px;
+        height: 500px;
+    }    
+    
     .swiper a{
        
         margin: 0 auto;
@@ -94,8 +126,13 @@
         
     }
 
-    .swiper-slide{
-        padding-bottom: 120px;
+    .swiper-slide {
+        margin-bottom: 110px;
+    }
+
+    .swiper-slide a{
+        padding-top: 0;
+        
     }
 
     .swiper-button-next {
@@ -108,4 +145,93 @@
         transform: rotate(90deg);
       }
 
+      /* 筆電專區 */
+
+.tp1-ul{
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
+
+.tp1-ul img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 認識筆電 */
+.laptop-item ul{
+     flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .laptop-item li{
+    margin: 0 auto;
+  }
+
+  .cover img{
+    width: 100px;
+  }
+
+  /* 關於我們 */
+
+  .ablr{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+  }
+
+  .ablr div{
+    margin: 0 auto;
+  }
+
+  .ablr h2{
+    font-size: 30px;
+  }
+
+  .ablr p{
+    display: block;
+    white-space: normal;
+    font-size: 22px;
+    text-align:left;
+  }
+
+  .ab1-l{
+    order: 1;
+  }
+
+  .ab1-r{
+    order: 2;
+  }
+  .ab2-r{
+    order: 3;
+  }
+
+  .ab2-l{
+    order:4
+  }
+
+  .ab3-l{
+    order: 5;
+  }
+
+  .ab3-r{
+    order: 6;
+  }
+
+  .ab4-r{
+    order: 7;
+  }
+
+  .ab4-l{
+    order: 8;
+  }
+
+  .ab5-l{
+    order: 9;
+  }
+
+  .ab5-r{
+    order: 10;
+  }
+
+}
+

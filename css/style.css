@@ -2,8 +2,8 @@
 
 
 body{
-  background-image: url('../images/cpu5.jpeg');
-  background-size:cover ;  
+  background-image: url('../images/sky3.jpeg'); 
+  background-size:contain;  
   font-family: Candara, Arial, sans-serif;
   padding-top: 100px;
   position: relative;
@@ -68,7 +68,7 @@ body{
   }  
 
   .top1 > li:hover > a {
-    text-shadow: 2px 2px 2px #BDE0CE;  
+    color: white; 
   }
 
   .item {
@@ -240,6 +240,7 @@ body{
   .info li a{    
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px black;
     padding: 0 20px;
     border-right:1px solid #fff ;    
   }
@@ -275,7 +276,7 @@ body{
 
   .content h2{
     text-align: center;
-    color: orange;
+    color: #a7a5af;
     text-shadow: 1px 1px black;
     display: block;
     font-weight: bold;
@@ -309,22 +310,12 @@ body{
     text-decoration: none;
     display: block;
     height: 500px;
-    color: black;
+    color: #a7a5af;
+    text-shadow: 1px 1px  black;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-    padding-top: 30px;
-    background-color: orange;     
-  
-}
-
-.mainitem p{
-  background-color: purple;
-  width: fit-content;
-  margin: 0 auto;
-  border-radius: 5px;
-  padding: 5px 10px;
-  
+    padding-top: 30px;     
 }
 
 .itema a{
@@ -348,15 +339,12 @@ body{
 .mainitem li{
   flex-grow: 1;
 }
-/* .mainitem a:hover{
-color: royalblue;
-} */
 
 /* -------電競筆電------ */
 .tp1-ul{
   display: flex;
   margin: 0 auto;
-  width: 1100px;
+  width: 90%;
   flex-wrap: wrap;
   
 }
@@ -373,6 +361,7 @@ color: royalblue;
 
 .tp1-ul h3{
   color: white;
+  text-shadow: 1px 1px black;
   font-size: 20px;
   text-align: center;
 }
@@ -404,6 +393,9 @@ color: royalblue;
  
   text-align: center;
   padding-top: 50px;
+  color: red;
+  font-size: 50px;
+  text-shadow: 1px 1px black;
   z-index: 1;
   display: none;
 }
@@ -420,7 +412,7 @@ color: royalblue;
 
 .laptop-item {
   
-  width: 1200px;
+  width: 95%;
   margin: 0 auto;
   /* border: 5px solid red; */
   overflow: hidden;
@@ -433,18 +425,15 @@ color: royalblue;
 }
 .laptop-item h2{
   font-size: 42px;
-  color: skyblue;
+  color: #a7a5af;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
 }
 
 .laptop-item li{
   width: 280px;
   padding: 10px;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,.3);
-  
   padding-top: 20px;
-  /* margin-bottom: 200px; */
-  /* margin-left: 30px; */
 }
 
 .laptop-item img{
@@ -458,6 +447,7 @@ color: royalblue;
 
 .laptop-item h3{
   color: red;
+  text-shadow: 1px 1px black;
   text-align: center;
   font-size: 32px;
   padding-top: 20px;
@@ -468,6 +458,7 @@ color: royalblue;
   display: block;
   line-height: 1.6;
   color: white;
+  text-shadow: 1px 1px black;
   padding: 0 30px;
  
 }
@@ -476,8 +467,8 @@ color: royalblue;
 
 .cover{
   position: relative;
-  width: 800px;
-  height: 1000px;
+  width: 90%;
+  height: 500px;
   margin: 100px auto ; 
 }
 
@@ -488,60 +479,60 @@ color: royalblue;
 .pc1{
   position: absolute;
   animation: pc1 10s 1s  linear infinite;
-  left: -100px;
-  top:100px;
+  left: 10%;
+  top:-100px;
 }
 .pc2{
   position: absolute;
   animation: pc2 10s 1s linear infinite;
-  left: 100px;
-  top:300px;
+  left: 30%;
+  top:100px;
 }
 .pc3{
   position: absolute;
   animation: pc3 10s 1s linear infinite;
-  left: 300px;
-  top:500px;
+  left: 70%;
+  top:300px;
 }
 
 @keyframes pc1{
 	0%{
-		left: -100px;
+		left: 10%;
     transform: rotate(0deg);
 	}
 
   50%{
-    top :300px;
+    top :200px;
   }
 	100%{
-		left: 700px;
-    transform: rotate(720deg);
+		left: 70%;
+    transform: rotate(-720deg);
 	}
  
 }
 @keyframes pc2{
 	0%{
-		left: 100px;
+		left: 30%;
     transform: rotate(0deg);
 	}
   50%{
-    top:500px;
+    top:0px;
   }
 	100%{
-		left: 700px;
+		left: 90%;
     transform: rotate(720deg);
 	}
 }
 @keyframes pc3{
 	0%{
-		left: 700px;
+		left: 70%;
     transform: rotate(0deg);
 	}
   50%{
-    top:700px;
+    top:-100px;
   }
 	100%{
-		left: -100px;
+		left: 0%;
     transform: rotate(720deg);
 	}
 }
@@ -552,24 +543,25 @@ color: royalblue;
 }
 
 .allab h1{
-  color: skyblue;
+  color: #a7a5af;
   font-size: 42px;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
-  text-shadow: 3px 3px 2px black;
+  text-shadow: 1px 1px  black;
 }
 
 .ablr{
   display: flex;
   flex-wrap: wrap;
-  width: 1100px;
+  width: 80%;
   margin: 0 auto;
   
 
 }
 
 .ablr h2{
-  color: #748cab;
+  color: #a7a5af;
   padding-bottom: 30px;
   font-size: 50px;
 }
@@ -715,8 +707,7 @@ color: royalblue;
 
 
   .swiper {
-    width: 1100px;
-    height: 300px;   
+    width: 100%;
   }
 
   .mySwiper0 img{
@@ -735,9 +726,10 @@ color: royalblue;
   .swiper-slide a {
     display: block;
     text-decoration: none;
-    color: skyblue;
-    font-weight: bold;
+    color: white;
     text-shadow: 1px 1px black;
+    font-weight: bold;
+    /* text-shadow: 1px 1px black; */
     padding-top: 50px;
     margin: 0 auto;
     width: 200px;    
