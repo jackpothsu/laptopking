@@ -529,7 +529,7 @@ body{
     top:0px;
   }
 	100%{
-		left: 90%;
+		left: 70%;
     transform: rotate(720deg);
 	}
 }
@@ -824,6 +824,56 @@ textarea::placeholder {
       font-weight: bold;
     }
 
+    /* 拉條 */
+    :root {
+      --scrollbar-width: 16px;
+      --scrollbar-color: #888;
+      --scrollbar-background-color: #f1f1f1;
+    }
+    
+    /* 垂直拉條 */
+    ::-webkit-scrollbar {
+      width: var(--scrollbar-width);
+    }
+    
+    /* 滑塊 */
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--scrollbar-color);
+    }
+    
+    /* 滑道 */
+    ::-webkit-scrollbar-track {
+      background-color: var(--scrollbar-background-color);
+    }
+
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 9999;
+    }
+    
+    .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      margin: -25px 0 0 -25px;
+      border: 6px solid #3498db;
+      border-top-color: #fff;
+      border-radius: 100%;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
     
 
 

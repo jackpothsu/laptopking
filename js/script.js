@@ -23,6 +23,23 @@ $(function () {
     $('p').toggleClass('test-on');
     
   })
+
+
+  // 取得拉條元素
+const scrollbar = document.documentElement.style;
+
+// 設定拉條寬度和顏色
+scrollbar.setProperty('--scrollbar-width', '16px');
+scrollbar.setProperty('--scrollbar-color', '#888');
+
+// 設定拉條背景顏色
+scrollbar.setProperty('--scrollbar-background-color', '#f1f1f1');
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var loading = document.getElementById("loading");
+    loading.style.display = "none";
+  });
+  
 
  
