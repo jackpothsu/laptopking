@@ -11,6 +11,18 @@ $(function () {
     htmlbr.innerHTML = cleanedString;
   }}
    
+
+  //漢堡排
+  $('.header').click(function(){
+    $('.top1').toggleClass('on');
+    $('.toggle').toggleClass("open");
+  })
+  
+
+  $('.mainitem li').click(function(){
+    $('p').toggleClass('test-on');
+    
+  })
   });
 
  

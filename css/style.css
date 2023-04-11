@@ -24,16 +24,19 @@ body{
     margin:  auto  ;
     position: absolute;
     position: fixed;
-    z-index: 100;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;     
   }
 
-  .top1{
+  
+
+  .top1 {
     display:flex;    
     justify-content: space-around;    
   }
+
 
   .top1 .fa-bars  {
     display: none;
@@ -47,7 +50,6 @@ body{
   }
 
   .top1 > li  {
-    display: block;
     text-decoration: none;
     width: 200px;
     line-height: 50px;
@@ -131,8 +133,7 @@ body{
 }
 
 .allcart > img{
-  width: 900px;
-  height: 400px;
+  width: 80%;
   display: block;
   margin: 20px auto;
 
@@ -146,12 +147,12 @@ body{
 }
 .headcart {
   color: white;
-  width: 1000px;
+  width: 80%;
   margin: 0 auto;
 }
 
 .headcart table{
-  width: 90%;
+  width: 80%;
   margin: 0 40px 5px;
 }
 
@@ -178,15 +179,15 @@ body{
 }
 
 .headcart table tr th:nth-child(1){
-  width: 350px;
+  width: 30%;
 }
 
 .headcart table tr th:nth-child(2){
-  width: 250px;
+  width: 20%;
 }
 
 .headcart table tr th:nth-child(3){
-  width: 250px;
+  width: 30%;
 }
 
 .headcart table td select{
@@ -270,13 +271,13 @@ body{
   .content img{
     display: block;
     margin: 0 auto;
-    width: 900px;
+    width: 80%;
     margin-bottom: 50px;
   }
 
   .content h2{
     text-align: center;
-    color: #a7a5af;
+    color: orange;
     text-shadow: 1px 1px black;
     display: block;
     font-weight: bold;
@@ -296,7 +297,7 @@ body{
 
 
 .mainitem{
-   width: 900px;   
+   width: 80%;   
     margin-top: 30px;
     margin: 0 auto;    
     display: flex;
@@ -310,12 +311,21 @@ body{
     text-decoration: none;
     display: block;
     height: 500px;
-    color: #a7a5af;
+    color: orange;
     text-shadow: 1px 1px  black;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
     padding-top: 30px;     
+}
+
+.mainitem li:hover p{
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  transition: 2s;
+  padding: 10px;
+
 }
 
 .itema a{
@@ -425,7 +435,7 @@ body{
 }
 .laptop-item h2{
   font-size: 42px;
-  color: #a7a5af;
+  color: orange;
   font-weight: bold;
   text-shadow: 1px 1px black;
 }
@@ -446,7 +456,7 @@ body{
 }
 
 .laptop-item h3{
-  color: red;
+  color: orange;
   text-shadow: 1px 1px black;
   text-align: center;
   font-size: 32px;
@@ -543,7 +553,7 @@ body{
 }
 
 .allab h1{
-  color: #a7a5af;
+  color: orange;
   font-size: 42px;
   font-weight: bold;
   text-align: center;
@@ -561,7 +571,7 @@ body{
 }
 
 .ablr h2{
-  color: #a7a5af;
+  color: orange;
   padding-bottom: 30px;
   font-size: 50px;
 }
@@ -594,7 +604,7 @@ body{
 
 .ct{
   display: flex;
-  width: 1000px;
+  width: 80%;
   margin: 100px auto;
 }
 
@@ -614,7 +624,7 @@ body{
 }
 
 .ct-left h2{
-  color: coral;
+  color: orange;
   font-size: 42px;
 }
 
@@ -626,7 +636,7 @@ body{
 
 .contact-item{
   border: 1px solid white;
-  width: 800px;
+  width: 80%;
   margin: 100px auto;
   padding: 20px 0;
 }
@@ -641,7 +651,7 @@ body{
 
 .contact-item input{
   margin-top: 10px;
-  width: 600px;
+  width: 80%;
   line-height: 30px;
   padding: 10px;
   border: 0px;
@@ -657,7 +667,7 @@ body{
 
 .contact-item textarea{
   margin-top: 10px;
-  width: 600px;
+  width: 80%;
   height: 300px;
   padding: 10px;
   border: 1px solid white;
@@ -697,10 +707,19 @@ body{
 }
 
 .contact-item h3{
-  color: white;  
+  color: orange;  
+  text-shadow: 1px 1px black;
   font-weight: bold;
   font-size: 32px;
   text-align: center;
+}
+
+input[type="text"]::placeholder {
+  color: orange;
+}
+
+textarea::placeholder {
+  color: orange;
 }
 
 /* JS套件 */
