@@ -391,7 +391,7 @@ body{
   position: relative;
 }
 
-.tp1-ul a:hover i{
+.tp1-ul li:hover i{
   display: block;
 }
 
@@ -856,6 +856,7 @@ textarea::placeholder {
       z-index: 9999;
     }
     
+    /* 讀取畫面 */
     .spinner {
       position: absolute;
       top: 50%;
